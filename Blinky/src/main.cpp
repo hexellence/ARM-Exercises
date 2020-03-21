@@ -82,8 +82,8 @@ namespace
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
+
   // Send a greeting to the trace device (skipped on Release).
   trace_puts("Hello ARM World!");
 
@@ -104,21 +104,21 @@ int main(int argc, char* argv[])
   uint32_t seconds = 0;
 
   // Infinite loop
-  while (1)
-    {
+  while (1) {
+
 	  pGreenLed->turnOn();
 	  pBlueLed->turnOff();
-      timer.sleep(seconds== 0 ? Timer::FREQUENCY_HZ : BLINK_ON_TICKS);
+      timer.sleep(500);
 
       pGreenLed->turnOff();
       pBlueLed->turnOn();
-      timer.sleep(BLINK_OFF_TICKS);
+      timer.sleep(500);
 
       ++seconds;
 
       // Count seconds on the trace device.
       trace_printf("Second %u\n", seconds);
-    }
+  }
   // Infinite loop, never return.
 }
 

@@ -55,14 +55,12 @@ public:
   static void
   sleep(ticks_t ticks);
 
-  inline static void
-  tick(void)
-  {
+  inline static void tick(void) {
+
     // Decrement to zero the counter used by the delay routine.
-    if (ms_delayCount != 0u)
-      {
+    if (ms_delayCount != 0u) {
         --ms_delayCount;
-      }
+    }
   }
 };
 
