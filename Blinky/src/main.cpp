@@ -108,11 +108,11 @@ int main(int argc, char* argv[]) {
 
 	  pGreenLed->turnOn();
 	  pBlueLed->turnOff();
-      timer.sleep(500);
+      timer.sleep(250);
 
       pGreenLed->turnOff();
       pBlueLed->turnOn();
-      timer.sleep(500);
+      timer.sleep(250);
 
       ++seconds;
 
