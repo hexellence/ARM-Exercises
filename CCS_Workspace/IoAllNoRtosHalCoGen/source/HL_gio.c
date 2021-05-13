@@ -166,8 +166,8 @@ void gioInit(void)
     gioPORTB->PULDIS  = (uint32)((uint32)0U << 0U) /* Bit 0 */
                       | (uint32)((uint32)0U << 1U)  /* Bit 1 */
                       | (uint32)((uint32)0U << 2U)  /* Bit 2 */
-                      | (uint32)((uint32)0U << 3U)  /* Bit 3 */
-                      | (uint32)((uint32)0U << 4U)  /* Bit 4 */
+                      | (uint32)((uint32)1U << 3U)  /* Bit 3 */
+                      | (uint32)((uint32)1U << 4U)  /* Bit 4 */
                       | (uint32)((uint32)0U << 5U)  /* Bit 5 */
                       | (uint32)((uint32)1U << 6U)  /* Bit 6 */
                       | (uint32)((uint32)1U << 7U); /* Bit 7 */

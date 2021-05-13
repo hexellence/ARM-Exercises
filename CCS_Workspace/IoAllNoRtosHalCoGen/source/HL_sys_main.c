@@ -48,7 +48,6 @@
 /* Include Files */
 
 #include "HL_sys_common.h"
-#include "HL_gio.h"
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */
@@ -70,16 +69,8 @@ uint32 	emacPhyAddress	=	1U;
 int main(void)
 {
 /* USER CODE BEGIN (3) */
-    uint32 switchA = 0;
 /* USER CODE END */
-    gioInit();
-    while(1)
-    {
-        switchA = gioGetBit(gioPORTB, 4);
-        gioSetBit(gioPORTB, 7, switchA);
-        switchA = (switchA == 1) ? 0 : 1;
-        gioSetBit(gioPORTB, 6, switchA);
-    }
+
     return 0;
 }
 
