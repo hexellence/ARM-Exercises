@@ -278,8 +278,7 @@
         <NAME>HL_lin.h</NAME>
       </HDRLIN>
       <SRCLIN>
-        <NAME>HL_lin.c</NAME>
-      </SRCLIN>
+</SRCLIN>
       <HDRMIBSPI_R>
         <NAME>HL_reg_mibspi.h</NAME>
       </HDRMIBSPI_R>
@@ -287,8 +286,7 @@
         <NAME>HL_mibspi.h</NAME>
       </HDRMIBSPI>
       <SRCMIBSPI>
-        <NAME>HL_mibspi.c</NAME>
-      </SRCMIBSPI>
+</SRCMIBSPI>
       <HDRSPI_R>
         <NAME>HL_reg_spi.h</NAME>
       </HDRSPI_R>
@@ -585,7 +583,7 @@
         <PATH>include\HL_lin.h</PATH>
       </HDRLIN>
       <SRCLIN>
-        <PATH>source\HL_lin.c</PATH>
+        <PATH></PATH>
       </SRCLIN>
     </FILENAMES>
   </LIN>
@@ -598,7 +596,7 @@
         <PATH>include\HL_mibspi.h</PATH>
       </HDRMIBSPI>
       <SRCMIBSPI>
-        <PATH>source\HL_mibspi.c</PATH>
+        <PATH></PATH>
       </SRCMIBSPI>
     </FILENAMES>
   </MIBSPI>

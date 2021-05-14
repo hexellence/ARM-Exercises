@@ -120,16 +120,16 @@ void adcInit(void)
     *     - Enable/Disable continuous conversion
     */
     adcREG1->GxMODECR[1U] = (uint32)ADC_12_BIT
-                          | (uint32)0x00000000U
-                          | (uint32)0x00000000U
-                          | (uint32)0x00000000U;
+                          | (uint32)0x00000020U
+                          | (uint32)0x00000008U
+                          | (uint32)0x00000002U;
 
     /** - Setup group 1 hardware trigger
      *     - Setup hardware trigger edge
      *     - Setup hardware trigger source
      */
-    adcREG1->G1SRC = (uint32)0x00000000U
-                   | (uint32)ADC1_EVENT;
+    adcREG1->G1SRC = (uint32)0x00000008U
+                   | (uint32)ADC1_GIOB0;
 
     /** - Setup group 1 sample window */
     adcREG1->G1SAMP = 1U;
@@ -374,7 +374,7 @@ static const uint32 s_adcSelect[2U][3U] =
     0x00000000U |
     0x00000000U |
     0x00000000U |
-    0x00000000U |
+    0x00000040U |
     0x00000000U |
     0x00000000U |
     0x00000000U |
