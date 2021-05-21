@@ -15,7 +15,6 @@ int main(void)
     adcInit();
     adcStartConversion(adcREG1,adcGROUP1);
 
-
     while(1)
     {
         while(adcIsConversionComplete(adcREG1,adcGROUP1)==0);

@@ -132,7 +132,7 @@ void adcInit(void)
                    | (uint32)ADC1_GIOB0;
 
     /** - Setup group 1 sample window */
-    adcREG1->G1SAMP = 1U;
+    adcREG1->G1SAMP = 0U;
 
     /** - Setup group 1 sample discharge 
     *     - Setup discharge prescaler
@@ -181,7 +181,7 @@ void adcInit(void)
 	adcREG1->EVTPSEL = 1U;
 
     /** - ADC1 EVT pin pullup / pulldown enable*/
-	adcREG1->EVTDIS = 0U;
+	adcREG1->EVTDIS = 1U;
 	
 	/** - Enable ADC module */
     adcREG1->OPMODECR |= 0x80140001U;
